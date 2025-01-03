@@ -3,6 +3,7 @@ ARG GOLANG_ARCHIVE
 
 RUN apt-get update && apt-get install -y \
     gcc g++ gcc-multilib \
+    ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 # manually install current go version
